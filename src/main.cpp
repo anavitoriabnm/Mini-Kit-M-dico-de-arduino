@@ -55,11 +55,11 @@ void loop() {
     Serial.print(tempC);
     Serial.println(" °C");
 
-    if (tempC < 36.0) {
+    if (tempC < 10.0) {
       digitalWrite(LED_AMARELO, HIGH);
       digitalWrite(LED_VERDE, LOW);
       digitalWrite(LED_VERMELHO, LOW);
-    } else if (tempC >= 36.0 && tempC <= 37.5) {
+    } else if (tempC >= 10.0 && tempC <= 10.5) {
       digitalWrite(LED_AMARELO, LOW);
       digitalWrite(LED_VERDE, HIGH);
       digitalWrite(LED_VERMELHO, LOW);
